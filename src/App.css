@@ -1,0 +1,149 @@
+@import url(//cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+
+html, body {
+    background-color: #f5f5f5;
+    font-family: 'NanumSquare';
+}
+  
+.app {
+    width: 500px;
+    margin: 100px auto;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ddd;
+}
+
+/* Input */
+.inputArea {
+	height: 64px;
+	border-bottom: 1px solid #eee;
+	display: flex;
+
+}
+
+.inputArea .imgBox {
+	flex: 1;
+	padding: 15px;
+}
+
+.inputArea input {
+	flex: 18;
+	height: 44;
+	font-size: 36px;
+    border: 0;
+    font-family: 'NanumSquare';
+}
+
+.inputArea input::placeholder {
+	color: #eee;
+	font-style: italic;
+}
+
+/* List */
+.list {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.list li {
+	display: flex;
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.doneBox {
+    flex: 1;
+}
+
+.contentBox {
+    flex: 10;
+	display: flex;
+} 
+
+.contentBox > .content {
+    flex: 5;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.contentBox > .content > .time {
+    font-size: 15px;
+}
+
+.contentBox > .content > input {
+    height: 26px;
+    width: 90%;
+    padding: 3px 5px;
+    font-size: 18px;
+    font-family: 'NanumSquare';
+}
+
+.contentBox > .buttons {
+    flex: 1;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox > .buttons img {
+    width: 25px;
+    height: 25px;
+}
+
+.contentBox > .buttons a:nth-child(2) img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+}
+
+.contentBox:hover > .buttons {
+    flex: 1;
+    opacity: 1;
+}
+
+
+/* msic */
+.done {
+    text-decoration: line-through;
+    color: #ddd;
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    height: 50px;
+}
+
+.footer > div {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer > .left {
+    display: flex;
+    align-items: center;
+}
+
+.footer > .right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.footer > .right button {
+    padding: 5px;
+    margin: 0 10px;
+    border: 0;
+    font-size: 14px;
+}
+
+.footer > .right button.selected {
+    border: 1px solid #F0D9DA;
+}
